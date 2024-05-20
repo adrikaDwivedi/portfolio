@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <!-- <p>Software Developer</p> -->
+          <h1>Hi , I'm <span> Adrika</span><br />from Varanasi</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------About------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/about.jpg" alt="about" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reiciendis voluptatum animi culpa consequuntur fuga reprehenderit
+              ducimus officia architecto! Amet tempora reiciendis eum esse
+              minima inventore in placeat incidunt quas nisi.
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Developing Web apps</li>
+                <li>
+                  <span>App Development</span><br />Building Cross-platform
+                  mobile apps
+                </li>
+                <li>
+                  <span>Problem Solving</span><br />Eager to find solutions
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="tab-content">
+                <ul>
+                    <li><span>Web Development</span><br>Developing Web apps</li>
+                    <li><span>App Development</span><br>Building Cross-platform mobile apps</li>
+                    <li><span>Problem Solving</span><br>Eager to find solutions</li>
+                </ul>
+            </div> -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - 2025</span><br />BCA-MCA DUAL DEGREE <br />Lovely
+                  Professional University, Phagwara <br /> CGPA: 8.06
+                </li>
+                <li><span>XII</span><br />Aditya Birla Public School, Renusagar<br>91.6%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+        }
+    </script>
+  </body>
+</html>
