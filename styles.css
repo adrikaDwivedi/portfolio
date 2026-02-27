@@ -4,6 +4,9 @@ html, body{
     padding: 0;
     background-color:#FCFCFC;
 }
+html{
+    scroll-behavior: smooth;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -11,7 +14,12 @@ html, body{
     padding: 15px 60px;
     position: relative;
     top: 0;
-
+    background: linear-gradient(
+  to bottom,
+  #0f0f0f,
+  #1a1a1a,
+  #222
+);
 }
 .nav-links{
 list-style: none;
@@ -19,20 +27,54 @@ display: flex;
 gap: 30px;
 text-decoration: none;
 margin: 50px;
+
+
 }
 .nav-links a{
 text-decoration: none;
-color: black;
+color: #e5e5e5;
 }
-
-.main-text{
- display: flex;
+main > section {
+  background: linear-gradient(
+    to bottom,
+    #55545437,
+    #a5a3a362,
+    #0b0a0a
+  );
+  padding: 80px 0;
+}
+main > section h2,
+main > section h3,
+main > section h4,
+main > section p,
+main > section li {
+  color: #FFF;
+}
+#main-text{
  justify-content: center;
  align-items: center;
  text-align: center;
  width: 100%;
- margin-top: 150px;
-
+background: linear-gradient(
+  to bottom,
+  #0f0f0f,
+  #1a1a1a,
+  #222
+);
+  padding: 120px 0; 
+margin-bottom: 0;
+}
+.heading-main {
+     font-weight: 600;
+  letter-spacing: 1px;
+ background: linear-gradient(
+  90deg,
+  #ffffff,
+  #cccccc,
+  #888888
+);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 main h1{
@@ -45,11 +87,27 @@ main h1{
 text-align: center;
 margin-top: 50px;
 font-size: 30px;
+background: linear-gradient(
+  90deg,
+  #ffffff,
+  #cccccc,
+  #888888
+);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #icons{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(
+  90deg,
+  #ffffff,
+  #cccccc,
+  #888888
+);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 i{
     justify-content: center;
@@ -61,7 +119,7 @@ i{
 hr{
     height: 3px;
     background-color: blue;
-    margin: 40px auto 20px;
+   
 }
 
 /* project description span aligned right */
@@ -130,6 +188,7 @@ section span{
 @media (max-width: 900px){
     .image-stack{ width: 420px; height: auto; }
     .img{ width: 140%; }
+
 }
 
 
@@ -140,16 +199,19 @@ section span{
   gap: 50px;
   padding: 40px 10%;
 }
-.project-text{
-    margin-left: 400px;
+.project-text h3,
+.project-text p {
+  color: #e5e5e5; 
+  margin-left: 400px;  /* or any color you want */
 }
 
 /* center the second heading (Projects) */
 .second-heading{
         text-align: center;
         width: 100%;
-    margin: 30px 0 30px;
         font-weight: 600;
+         margin-top: 0;
+ 
 }
 
 .timeline-block {
@@ -196,8 +258,12 @@ section span{
 
 footer {
   padding: 80px 60px 20px;
-  background: #f5f5f5;
-   margin-bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    #0f0f0f,
+    #1a1a1a,
+    #222
+  );
 }
 @media (max-width: 768px) {
   .footer-name {
@@ -205,7 +271,7 @@ footer {
   }
 }
 .footer-name {
-     margin: 0;
+  margin: 0;
   line-height: 1;
   font-size: 280px;
   font-weight: 700;
@@ -213,9 +279,9 @@ footer {
 
   background: linear-gradient(
     90deg,
-    #1f1f1f,
-    #555,
-    #aaa
+    #ffffff,
+    #cccccc,
+    #888888
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
