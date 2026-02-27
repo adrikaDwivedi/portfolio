@@ -16,23 +16,24 @@ html{
     top: 0;
     background: linear-gradient(
   to bottom,
-  #0f0f0f,
-  #1a1a1a,
-  #222
+  #fae6e6,
+  #0f0d0d4f,
+  #767575
 );
 }
 .nav-links{
 list-style: none;
 display: flex;
-gap: 30px;
+gap: 100px;
 text-decoration: none;
-margin: 50px;
-
-
-}
-.nav-links a{
+margin: 50px auto 0;
+padding-bottom: 50px;
+width: fit-content;
+font-weight: 600;
+font-size: 20px;
+}.nav-links a{
 text-decoration: none;
-color: #e5e5e5;
+color: #0f0f0fcb;
 }
 main > section {
   background: linear-gradient(
@@ -117,7 +118,7 @@ i{
 }
 
 hr{
-    height: 3px;
+    height: 1px;
     background-color: blue;
    
 }
@@ -143,7 +144,7 @@ section span{
 
 .image-stack {
   position: relative;
-  width: 800px;
+  width: 700px;
   height: 500px;
 }
 
@@ -201,7 +202,7 @@ section span{
 }
 .project-text h3,
 .project-text p {
-  color: #e5e5e5; 
+  color: #111111; 
   margin-left: 400px;  /* or any color you want */
 }
 
@@ -210,8 +211,9 @@ section span{
         text-align: center;
         width: 100%;
         font-weight: 600;
-         margin-top: 0;
- 
+        margin-top: 0;
+        color: #0f0f0fcb;
+        padding-top: 40px;
 }
 
 .timeline-block {
@@ -258,12 +260,12 @@ section span{
 
 footer {
   padding: 80px 60px 20px;
-  background: linear-gradient(
-    to bottom,
-    #0f0f0f,
-    #1a1a1a,
-    #222
-  );
+background: linear-gradient(
+  to bottom,
+  #0f0f0f,
+  #1a1a1a,
+  #222
+);
 }
 @media (max-width: 768px) {
   .footer-name {
@@ -286,3 +288,25 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.icon-link i {
+  color: #111111;
+}
+
+
+
+main + hr {
+  margin: 0;
+}
+
+
+#main-text + hr {
+  margin: 0;
+}
+
+#main-text + hr + section {
+  padding-top: 0;
+}
+
+
+
+
