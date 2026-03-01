@@ -291,8 +291,15 @@ background: linear-gradient(
 .icon-link i {
   color: #111111;
 }
+.icon-link i:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
 
-
+a {
+    text-decoration: none !important;
+  border-bottom: none;
+}
 
 main + hr {
   margin: 0;
