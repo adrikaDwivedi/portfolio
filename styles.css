@@ -16,12 +16,12 @@ html{
     justify-content:space-between;
     align-items:center;
     padding:15px 60px;
-    background:linear-gradient(
-        to bottom,
-        #fae6e6,
-        #0f0d0d4f,
-        #767575
-    );
+   background: linear-gradient(
+    to bottom,
+    #f2f2f2,
+    #cfcfcf,
+    #7a7a7a
+);
 }
 
 .nav-links{
@@ -43,12 +43,12 @@ html{
 /* SECTIONS */
 
 main > section{
-    background:linear-gradient(
-        to bottom,
-        #55545437,
-        #a5a3a362,
-        #0b0a0a
-    );
+background: linear-gradient(
+    to bottom,
+    #6e6e6e33,
+    #3a3a3a,
+    #050505
+);
     padding:80px 0;
 }
 
@@ -65,19 +65,24 @@ main > section li{
 #main-text{
     text-align:center;
     width:100%;
-    background:linear-gradient(
-        to bottom,
-        #0f0f0f,
-        #1a1a1a,
-        #222
-    );
+  background: linear-gradient(
+    to bottom,
+    #121212,
+    #0b0b0b,
+    #000000
+);
     padding:120px 0;
 }
 
 .heading-main{
     font-weight:600;
     letter-spacing:1px;
-    background:linear-gradient(90deg,#fff,#ccc,#888);
+   background: linear-gradient(
+    90deg,
+    #ffffff,
+    #e6e6e6,
+    #bfbfbf
+);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
@@ -93,7 +98,12 @@ main h1{
     text-align:center;
     margin-top:50px;
     font-size:30px;
-    background:linear-gradient(90deg,#fff,#ccc,#888);
+    background: linear-gradient(
+    90deg,
+    #ffffff,
+    #e6e6e6,
+    #bfbfbf
+);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
@@ -102,12 +112,12 @@ main h1{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(
-        90deg,
-        #ffffff,
-        #cccccc,
-        #888888
-    );
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #e6e6e6,
+    #bfbfbf
+);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
@@ -148,6 +158,7 @@ hr{
     object-fit:cover;
     border-radius:15px;
     box-shadow:0 10px 20px rgba(0,0,0,0.3);
+    will-change:transform;
 }
 
 .project-row:nth-of-type(2) .img,
@@ -178,9 +189,9 @@ hr{
 /* HOVER EFFECT */
 
 .image-stack .img{
-    transition:transform 320ms cubic-bezier(.2,.9,.2,1), box-shadow 320ms;
+    transition: transform 420ms cubic-bezier(.19,1,.22,1),
+                box-shadow 420ms ease;
 }
-
 .image-stack:hover .img1{
     transform:translate(-12px,-12px) scale(1.03);
 }
@@ -203,6 +214,7 @@ hr{
 
 .project-text{
     max-width:520px;
+    
 }
 
 .project-text h3{
@@ -270,7 +282,7 @@ hr{
     text-align:center;
     width:100%;
     font-weight:600;
-    color:#0f0f0fcb;
+    color:#FFF;
     padding-top:40px;
 }
 
@@ -295,21 +307,25 @@ hr{
 }
 /* TECHNICAL SKILLS */
 
+
 .technical-skill{
-    max-width:900px;
+    max-width:1100px;
     margin:80px auto;
-    text-align: center;
+    padding:0 60px;
 }
 
 .technical-skill h3{
     font-size:28px;
     margin-bottom:25px;
-    color:#ffffff;
+       color:#FFF;
+
+    text-align: center;
 }
 
 .skills-list{
     list-style:none;
     padding:0;
+    margin-left: 100px;
 }
 
 .skills-list li{
@@ -321,19 +337,17 @@ hr{
 
 .skills-list b{
     color:#ffffff;
-    font-weight:600;
 }
-
 /* FOOTER */
 
 footer{
     padding:80px 60px 20px;
-    background:linear-gradient(
-        to bottom,
-        #0f0f0f,
-        #1a1a1a,
-        #222
-    );
+background: linear-gradient(
+    to bottom,
+    #141414,
+    #060606,
+    #000000
+);
 }
 
 .footer-name{
@@ -342,7 +356,12 @@ footer{
     font-size:280px;
     font-weight:700;
     text-align:center;
-    background:linear-gradient(90deg,#fff,#ccc,#888);
+ background: linear-gradient(
+    90deg,
+    #ffffff,
+    #e6e6e6,
+    #bfbfbf
+);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
